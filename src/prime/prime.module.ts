@@ -8,6 +8,8 @@ import {FileUploadModule} from 'primeng/fileupload';
 import {ProgressBarModule} from 'primeng/progressbar';
 import {TableModule} from 'primeng/table';
 import {OverlayPanelModule} from 'primeng/overlaypanel';
+import {ToastModule} from 'primeng/toast';
+
 
 @NgModule({
   declarations: [],
@@ -21,6 +23,7 @@ import {OverlayPanelModule} from 'primeng/overlaypanel';
     ProgressBarModule,
     OverlayPanelModule,
     TableModule,
+    ToastModule
   ],
   imports: [
     CommonModule,
@@ -31,7 +34,8 @@ import {OverlayPanelModule} from 'primeng/overlaypanel';
     FileUploadModule,
     ProgressBarModule,
     OverlayPanelModule,
-    TableModule
+    TableModule,
+    ToastModule
   ]
 })
 export class PrimeModule { }
