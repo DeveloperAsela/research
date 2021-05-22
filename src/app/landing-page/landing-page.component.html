@@ -1,0 +1,194 @@
+<div class="main-container">
+  <div class="main-content">
+    <!--Header-->
+    <div class="p-grid">
+      <div class="p-col-12 p-sm-12 p-md-10 p-lg-10 p-xl-10">
+        <p>Logo</p>
+      </div>
+      <div class="p-col-12 p-sm-12 p-md-2 p-lg-2 p-xl-2">
+        <div class="p-grid">
+          <div class="p-col-6">
+            <button pButton type="button" label="Sign In" class="p-button-rounded p-button-outlined p-button-sm"
+              style="float: right;" (click)="routeToLoginPage()"></button>
+          </div>
+          <div class="p-col-6">
+            <button pButton pRipple type="button" label="Sign UP"
+              class="p-button-rounded p-button-success p-button-sm" (click)="routeToSignUpPage()"></button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Search Services OR Developers-->
+    <div class="p-grid p-fluid p-mt-2">
+      <div
+        class="p-col-10 p-sm-10 p-md-10 p-lg-10 p-xl-10 p-offset-1 p-sm-offset-1 p-md-offset-1 p-lg-offset-1  p-xl-offset-1 p-fluid">
+        <div class="p-grip">
+          <div class="p-col-6">
+            <h3>IF YOU WANT SOMETHING,</h3>
+            <h3>FIND IT</h3>
+            <div>
+              <span class="p-input-icon-right">
+                <i class="pi pi-search"></i>
+                <input type="text" pInputText>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Our Services-->
+    <div class="p-grid p-fluid p-mt-2">
+      <div
+        class="p-col-10 p-sm-10 p-md-10 p-lg-10 p-xl-10 p-offset-1 p-sm-offset-1 p-md-offset-1 p-lg-offset-1  p-xl-offset-1 p-fluid our-services">
+        <h1 class="">Our Services</h1>
+        <hr>
+        <div class="p-grid">
+          <div class="p-col-12 p-sm-12 p-md-6 p-lg-4 p-xl-3 service-card">
+            <div class="diamond-shape">
+              <div class="item-count"><i class="pi pi-search"></i></div>
+            </div>
+            <h4>Web Design</h4>
+            <p for="">
+              The very appolite to disscut
+              company his bucket I think
+              somebody people
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Our Mission-->
+    <div class="p-grid p-fluid p-mt-2">
+      <div
+        class="p-col-10 p-sm-10 p-md-10 p-lg-10 p-xl-10 p-offset-1 p-sm-offset-1 p-md-offset-1 p-lg-offset-1  p-xl-offset-1 p-fluid our-services">
+        <h1 class="">Our Mission</h1>
+        <hr>
+        <div class="p-grid">
+          <div class="p-col-12 p-sm-12 p-md-6 p-lg-4 p-xl-3  p-offset-md-2 p-offset-lg-1 p-offset-xl-1">
+            <h2>"</h2>
+            <p for="">
+              A component instance has a lifecycle that starts when Angular instantiates the component class and renders
+              the component view along with its child views. The lifecycle continues with change detection, as Angular
+              checks to see when data-bound properties change, and updates both the view and the component instance as
+              needed. The lifecycle ends when Angular destroys the component instance and removes its rendered template
+              from the DOM. Directives have a similar lifecycle, as Angular creates, updates, and destroys instances in
+              the course of execution.
+            </p>
+          </div>
+          <div class="p-col-12 p-sm-12 p-md-4 p-lg-7 p-xl-8">
+            <img src="../../assets/img/test.png" alt="" height="auto" width="100%">
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Our Vision-->
+    <div class="p-grid p-fluid p-mt-2">
+      <div
+        class="p-col-10 p-sm-10 p-md-10 p-lg-10 p-xl-10 p-offset-1 p-sm-offset-1 p-md-offset-1 p-lg-offset-1  p-xl-offset-1 p-fluid our-services">
+        <h1 class="">Our Vission</h1>
+        <hr>
+        <div class="p-grid">
+          <div class="p-col-12 p-sm-12 p-md-4 p-lg-7 p-xl-8">
+            <img src="../../assets/img/test.png" alt="" height="auto" width="100%">
+          </div>
+          <div class="p-col-12 p-sm-12 p-md-6 p-lg-4 p-xl-3  p-offset-md-2 p-offset-lg-1 p-offset-xl-1">
+            <h2>"</h2>
+            <p for="">
+              A component instance has a lifecycle that starts when Angular instantiates the component class and renders
+              the component view along with its child views. The lifecycle continues with change detection, as Angular
+              checks to see when data-bound properties change, and updates both the view and the component instance as
+              needed. The lifecycle ends when Angular destroys the component instance and removes its rendered template
+              from the DOM. Directives have a similar lifecycle, as Angular creates, updates, and destroys instances in
+              the course of execution.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Developers Count-->
+    <div class="p-grid p-fluid p-mt-2">
+      <div
+        class="p-col-10 p-sm-10 p-md-10 p-lg-10 p-xl-10 p-offset-1 p-sm-offset-1 p-md-offset-1 p-lg-offset-1  p-xl-offset-1 p-fluid our-services">
+        <div class="p-grid">
+          <div class="p-col-12 p-sm-12 p-md-6 p-lg-6 p-xl-6">
+            <h1>Animation</h1>
+          </div>
+          <div class="p-col-12 p-sm-12 p-md-6 p-lg-6 p-xl-6">
+            <ng-container *ngFor="let dev of developers">
+              <div class="p-grid">
+                <div class="p-col-6">{{dev.name}}</div>
+                <div class="p-col-6">{{dev.count}}</div>
+              </div>
+            </ng-container>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Developers-->
+    <div class="p-grid p-fluid p-mt-2">
+      <div
+        class="p-col-10 p-sm-10 p-md-10 p-lg-10 p-xl-10 p-offset-1 p-sm-offset-1 p-md-offset-1 p-lg-offset-1  p-xl-offset-1 p-fluid our-services">
+        <p-carousel [value]="products" styleClass="custom-carousel" [numVisible]="3" [numScroll]="1" [circular]="true"
+          [autoplayInterval]="4000" [responsiveOptions]="responsiveOptions">
+          <ng-template let-product pTemplate="item">
+            <div class="product-item">
+              <div class="product-item-content">
+                <div class="p-mb-3">
+                  <img src="../../assets/img/test.png" class="product-image" />
+                </div>
+                <div>
+                  <h4 class="p-mb-1">{{product}}</h4>
+                  <h6 class="p-mt-0 p-mb-3">${{product}}</h6>
+                  <div class="car-buttons p-mt-5">
+                    <p-button type="button" styleClass="p-button p-button-rounded p-mr-2" icon="pi pi-search">
+                    </p-button>
+                    <p-button type="button" styleClass="p-button-success p-button-rounded p-mr-2" icon="pi pi-star">
+                    </p-button>
+                    <p-button type="button" styleClass="p-button-help p-button-rounded" icon="pi pi-cog"></p-button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </ng-template>
+        </p-carousel>
+      </div>
+    </div>
+    <!--Contact us-->
+    <div class="p-grid p-fluid p-mt-2 p-mb-6">
+      <div
+        class="p-col-10 p-sm-10 p-md-10 p-lg-10 p-xl-10 p-offset-1 p-sm-offset-1 p-md-offset-1 p-lg-offset-1  p-xl-offset-1 p-fluid our-services"
+        style="border: 1px solid red;">
+        <div class="p-grid p-ai-start vertical-container">
+          <div class="p-col">
+            <h3>Logo</h3>
+            <p>content</p>
+          </div>
+          <div class="p-col">
+            <div class="p-d-flex p-flex-column p-flex-md-row">
+              <div class="p-mb-2 p-mr-2">Item 1</div>
+              <div class="p-mb-2 p-mr-2">Item 2</div>
+              <div class="p-mb-2 p-mr-2">Item 3</div>
+            </div>
+          </div>
+          <div class="p-col">
+          <ul>
+            <li>
+              test
+            </li>
+            <li>
+              test
+            </li>
+            <li>
+              test
+            </li>
+            <li>
+              test
+            </li>
+          </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>

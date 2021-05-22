@@ -1,0 +1,44 @@
+.our-services{
+  text-align: center;
+  hr{
+    width: 10%;
+  }
+}
+
+
+.service-card{
+  padding: 30px;
+  text-align: center;
+  .diamond-shape {
+    border:2px solid red;
+    height: 60px;
+    text-align: center;
+    transform:rotate(45deg);
+    width:60px;
+    margin: 0 auto;
+  }
+  .item-count {
+    color: #333;
+    display: table-cell;
+    height: 60px;
+    transform: rotate(-45deg);
+    vertical-align: middle;
+    width:60px;
+  }
+}
+
+.product-item {
+  .product-item-content {
+      border: 1px solid var(--surface-d);
+      border-radius: 3px;
+      margin: .3rem;
+      text-align: center;
+      padding: 2rem 0;
+  }
+
+  .product-image {
+      width: 50%;
+      box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23)
+  }
+}
+

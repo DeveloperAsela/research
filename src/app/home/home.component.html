@@ -1,0 +1,150 @@
+<div class="p-grid">
+  <div class="p-col-12 p-md-12 p-lg-12" style="text-align: center;">
+    <h2>Smart Agriculture Consulting System On Paddy Cultivation</h2>
+  </div>
+  <div class="p-col-12 p-md-12 p-lg-12">
+    <div class="p-grid">
+      <div class="p-col-12 p-md-4 p-lg-4">
+        <p-card>
+          <ng-template pTemplate="header">
+            <div class="p-grid">
+              <div class="p-col" style="text-align: center;">
+                <h3>Brown Spot</h3>
+              </div>
+            </div>
+          </ng-template>
+          <div>
+            <p-fileUpload mode="advanced" name="demo[]" url="./upload.php" [multiple]="false" accept="image/*"
+              maxFileSize="1000000">
+            </p-fileUpload>
+          </div>
+          <div>
+            <div class="p-grid">
+              <div class="p-col" style="text-align: center;">
+                <p>Accuracy</p>
+                <p-progressBar [value]="75"></p-progressBar>
+              </div>
+              <div class="p-col" style="text-align: center;">
+                <p>Healthy</p>
+                <p-progressBar [value]="50"></p-progressBar>
+              </div>
+            </div>
+            <div class="p-grid">
+              <div class="p-col" style="text-align: center;">
+                <p-button label="Show Suggestions" (click)="op.toggle($event)"></p-button>
+                <p-overlayPanel #op [showCloseIcon]="true" [style]="{width: '450px'}">
+                  <ng-template pTemplate>
+                    <p-table [value]="suggestions" [paginator]="true" [rows]="3">
+                      <ng-template pTemplate="body" let-rowData>
+                        <tr>
+                          <td><span>01</span>
+                            {{rowData}}</td>
+                        </tr>
+                      </ng-template>
+                    </p-table>
+                  </ng-template>
+                </p-overlayPanel>
+              </div>
+            </div>
+          </div>
+
+        </p-card>
+      </div>
+      <div class="p-col-12 p-md-4 p-lg-4">
+        <p-card>
+          <ng-template pTemplate="header">
+            <div class="p-grid">
+              <div class="p-col" style="text-align: center;">
+                <h3>Rice Blast</h3>
+              </div>
+            </div>
+          </ng-template>
+          <div>
+            <p-fileUpload mode="advanced" name="demo[]" url="./upload.php" [multiple]="false" accept="image/*"
+              maxFileSize="1000000">
+            </p-fileUpload>
+          </div>
+          <div>
+            <div class="p-grid">
+              <div class="p-col" style="text-align: center;">
+                <p>Accuracy</p>
+                <p-progressBar [value]="75"></p-progressBar>
+              </div>
+              <div class="p-col" style="text-align: center;">
+                <p>Healthy</p>
+                <p-progressBar [value]="50"></p-progressBar>
+              </div>
+            </div>
+            <div class="p-grid">
+              <div class="p-col" style="text-align: center;">
+                <p-button label="Show Suggestions" (click)="op.toggle($event)"></p-button>
+                <p-overlayPanel #op [showCloseIcon]="true" [style]="{width: '450px'}">
+                  <ng-template pTemplate>
+                    <p-table [value]="suggestions" [paginator]="true" [rows]="3">
+                      <ng-template pTemplate="body" let-rowData>
+                        <tr>
+                          <td><span>01</span>
+                            {{rowData}}</td>
+                        </tr>
+                      </ng-template>
+                    </p-table>
+                  </ng-template>
+                </p-overlayPanel>
+              </div>
+            </div>
+          </div>
+
+        </p-card>
+      </div>
+      <div class="p-col-12 p-md-4 p-lg-4">
+        <p-card>
+          <ng-template pTemplate="header">
+            <div class="p-grid">
+              <div class="p-col" style="text-align: center;">
+                <h3>Rice Leaffolder Caterpillar</h3>
+              </div>
+            </div>
+          </ng-template>
+          <div>
+            <p-fileUpload mode="advanced" name="demo[]" url="./upload.php" [multiple]="false" accept="image/*"
+              maxFileSize="1000000">
+            </p-fileUpload>
+          </div>
+          <div>
+            <div class="p-grid">
+              <div class="p-col" style="text-align: center;">
+                <p>Accuracy</p>
+                <p-progressBar [value]="75"></p-progressBar>
+              </div>
+              <div class="p-col" style="text-align: center;">
+                <p>Healthy</p>
+                <p-progressBar [value]="50"></p-progressBar>
+              </div>
+            </div>
+            <div class="p-grid">
+              <div class="p-col" style="text-align: center;">
+                <p-button label="Show Suggestions" (click)="op.toggle($event)"></p-button>
+                <p-overlayPanel #op [showCloseIcon]="true" [style]="{width: '450px'}">
+                  <ng-template pTemplate>
+                    <p-table [value]="suggestions" [paginator]="true" [rows]="3">
+                      <ng-template pTemplate="body" let-rowData>
+                        <tr>
+                          <td><span>01</span>
+                            {{rowData}}</td>
+                        </tr>
+                      </ng-template>
+                    </p-table>
+                  </ng-template>
+                </p-overlayPanel>
+              </div>
+            </div>
+          </div>
+        </p-card>
+      </div>
+    </div>
+  </div>
+  <div>
+
+  </div>
+
+</div>

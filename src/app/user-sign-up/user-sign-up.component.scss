@@ -1,0 +1,19 @@
+.text-center{
+  text-align: center;
+}
+.input-felid{
+  border-radius: 20px;
+}
+@media only screen and (min-width: 992px) {
+  .sign-up-form-container{
+    position: relative;
+    top: 50%;
+    left: 2%;
+  }
+  .right-container{
+    position: relative;
+    top: 22%;
+    right: 3%;
+  }
+}
+
